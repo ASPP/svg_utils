@@ -1,3 +1,5 @@
 *.swp
 *.swc
 *.pyc
+
+/.pybuild/

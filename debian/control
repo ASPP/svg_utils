@@ -1,0 +1,32 @@
+Source: python-svgutils
+Homepage: https://github.com/btel/svg_utils
+Maintainer: Zbigniew Jędrzejewski-Szmek <zbyszek@in.waw.pl>
+Build-Depends: debhelper (>= 8),
+ 	       dh-python,
+ 	       python-all (>= 2.6.6-3~),
+ 	       python-setuptools,
+ 	       python3-all
+
+Package: python-svgutils
+Architecture: any
+Depends: ${python:Depends}, ${misc:Depends}, libc6, python-lxml
+Description: Python-based SVG editor (Python 2)
+ This package provides a library that helps to edit and concatenate
+ SVG files. It is especially directed at scientists preparing final
+ figures for submission to journal. So far it supports arbitrary
+ placement and scaling of svg figures and adding markers, such as
+ labels.
+ .
+ This is the Python 2 version of the package.
+
+Package: python3-svgutils
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, libc6, python3-lxml
+Description: Python-based SVG editor (Python 3)
+ This package provides a library that helps to edit and concatenate
+ SVG files. It is especially directed at scientists preparing final
+ figures for submission to journal. So far it supports arbitrary
+ placement and scaling of svg figures and adding markers, such as
+ labels.
+ .
+ This is the Python 3 version of the package.
